@@ -6,6 +6,7 @@ import Rewardmain from '../../images/Rewardmain.jpeg'
 import Rewards from '../../images/Rewards.png'
 
 import PaperToolbar from './PaperToolbar';
+import Customer from './Customer';
 
 class HomeView extends Component {
 
@@ -13,6 +14,7 @@ class HomeView extends Component {
         return (
             <div>
                 <PaperToolbar title="Home" iconElement={<ActionHome/>}/>
+                <Customer />
                 <Card className="inner-padding">
                     <CardHeader
                         title="Rewards Program"

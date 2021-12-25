@@ -29,9 +29,9 @@ export default class RewardsCard extends Component {
 
     return (
       <div>
-        <p>{this.props.date}</p>
-        <p>{this.props.purchase}</p>
-        <p>{this.calculateRewards()}</p>
+        <button>Gold{this.props.date}</button>
+        <button>Silver{this.props.purchase}</button>
+        <button>Platinum{this.calculateRewards()}</button>
       </div>
     )
   }

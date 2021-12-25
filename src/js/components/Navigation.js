@@ -29,7 +29,7 @@ class Navigation extends Component {
             <div>
                 <AppBar
                     title="Rewards Program"
-                    iconElementRight={<a href="https://github.com/jotkharoud" alt="Source Code">
+                    iconElementRight={<a href="https://github.com/jotkharoud/Rewards" alt="Source Code">
                             <img src={github} className="toolbar-icon" alt="Home"/></a>}
                     onLeftIconButtonTouchTap={this.toggleDrawer}
                 />
@@ -52,8 +52,8 @@ class Navigation extends Component {
                                   leftIcon={<MapsLocalOffer />}/>
                         <MenuItem primaryText="Add payment(Mock)" containerElement={<Link to="/add-payment" />}
                                   leftIcon={<EditorAttachMoney />}/>
-                            <MenuItem primaryText="Points" containerElement={<Link to="/Rewards" />}
-                                  leftIcon={<EditorAttachMoney />}/>      
+                           <MenuItem primaryText="RewardsCard" containerElement={<Link to="/rewards-card" />}
+                                leftIcon = {<IconButton />}/>     
                     </Menu>
                 </Drawer>
                 <div className="main-container">
