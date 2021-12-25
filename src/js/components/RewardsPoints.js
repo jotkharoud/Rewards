@@ -5,17 +5,17 @@ export default class RewardsPoints extends Component {
   constructor(props) {
     super(props);
       this.state = {
-        transitionArr: this.props.transitions
+        transit: this.props.transitions
     };
   }
 
   render() {
-    const transitionList = this.state.transitionArr;
+    const List = this.state.transit;
     return (
       <div>
         <h2>{this.props.month}</h2>
         <div>
-        {transitionList.map((eachTransition, i) => (
+        {List.map((eachTransition, i) => (
           <RewardsCard
           {...eachTransition}
           key={eachTransition.id}

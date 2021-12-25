@@ -20,7 +20,7 @@ import github from '../../images/github.svg';
 
 class Navigation extends Component {
     state = {drawerOpen: false};
-    toggleDrawer = () => {
+    toggle = () => {
         this.setState({drawerOpen: !this.state.drawerOpen})
     };
 
@@ -31,13 +31,13 @@ class Navigation extends Component {
                     title="Rewards Program"
                     iconElementRight={<a href="https://github.com/jotkharoud/Rewards" alt="Source Code">
                             <img src={github} className="toolbar-icon" alt="Home"/></a>}
-                    onLeftIconButtonTouchTap={this.toggleDrawer}
+                    onLeftIconButtonTouchTap={this.toggle}
                 />
                 <Drawer open={this.state.drawerOpen}>
                     <AppBar
                         title="Rewards Program"
                         iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-                        onLeftIconButtonTouchTap={this.toggleDrawer}
+                        onLeftIconButtonTouchTap={this.toggle}
                     />
                     <Menu onItemTouchTap={this.toggleDrawer}>
                         <MenuItem primaryText="Home" containerElement={<Link to="/home" />}
@@ -68,3 +68,6 @@ class Navigation extends Component {
 
 
 export default Navigation;
+
+
+
